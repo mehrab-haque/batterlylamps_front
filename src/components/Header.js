@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Header=props=>{
     return(
@@ -9,24 +10,24 @@ const Header=props=>{
             </div>
             <div className='header-menu-container'>
                 <div className='header-menu-item'>
-                    HOME
+                    <Link to='/'>HOME</Link>
                 </div>
                 <div className='header-menu-item'>
-                    PRODUCTS
+                    <Link to='/products'>PRODUCTS</Link>
                 </div>
                 <div className='header-menu-item'>
-                    COMPANY
+                    <Link to='/company'>COMPANY</Link>
                 </div>
                 <div className='header-menu-item'>
-                    FACILITY
+                    <Link to='/facility'>FACILITY</Link>
                 </div>
                 <div className='header-menu-item'>
-                    OUR ADDRESS
+                   <Link to='/contact'>OUR ADDRESS</Link>
                 </div>
             </div>
             <div className='header-button-container'>
                 <button>
-                    CONTACT US
+                    <Link to='/contact'>CONTACT US</Link>
                 </button>
             </div>
         </div>
