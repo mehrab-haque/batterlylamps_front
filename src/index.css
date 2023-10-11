@@ -33,7 +33,7 @@ a{
 }
 
 .header-logo-container img{
-  height:35.7px;
+  height:50px;
   margin-left: 20px;
 }
 
@@ -73,7 +73,7 @@ a{
 
 .facility-container{
   
-  padding-top: 180px;
+  padding-top: 150px;
   width: 100%;
   max-width: 1040px;
 }
@@ -82,7 +82,7 @@ a{
   width: 100%;
   color: #333e63;
   font-family: 'Poppins', sans-serif;
-  font-size: 60px;
+  font-size: 2.8em;
   text-align: center;
   font-weight: bold;
 }
@@ -99,7 +99,7 @@ a{
   width: 100%;
   color: #333e63;
   font-family: 'Poppins', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
  
@@ -124,6 +124,7 @@ a{
 .facility-video-container{
   display: flex;
   justify-content: center;
+  margin-top: -30px;
 }
 
 .facility-video-container iframe{
@@ -139,17 +140,16 @@ a{
 }
 
 .item-text-container{
-  background-color: white;
+  background-color: #FBFBFD;
   width:100%;
   height: 100%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .item-image-container{
-  background-color: #FBFBFD;
+  background-color: white;
   width:100%;
   height: 100%;
   display: flex;
@@ -159,44 +159,48 @@ a{
 }
 
 .item-image-container img{
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   margin: 20px;
 }
 
 .item-text-header{
   color: #333e63;
   font-family: 'Poppins', sans-serif;
-  font-size: 36px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .item-text-description{
   color: #333e63;
-  margin-top: 16px;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  margin-right: 40px;
+  font-size: 1.1em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: -35px;
 }
 
 .item-items-header{
   color: #333e63;
   font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin-top: 40px;
+  font-size: 1.3em;
+  margin-top: 0px;
+  margin-top: -20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: -40px;
 }
 
 .item-items-item{
   color: #333e63;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
+  margin-bottom: -40px;
+  font-size: 1.1em;
 }
 
 .between{
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: -20px;
   font-size: 40px;
 }
 
@@ -217,4 +221,129 @@ a{
 
 .company-hero-bg img{
   width: 100%;
+}
+
+.header-burger-container{
+  display: none;
+}
+
+.item-text-container div{
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-container{
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 10px;
+  background-color: #333e63;
+  font-family: 'Poppins', sans-serif;
+}
+
+.map-container{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#map-canvas{
+  width:40vw;
+  height:40vw;
+}
+
+.contact-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container div{
+  text-align: left;
+}
+
+.contact-container div div{
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.map-page{
+  background-color: rgb(231, 241, 255);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header-menu-container,.header-button-container{
+    display: none;
+  }
+  .header-burger-container{
+    display: block;
+  }
+  .header-burger-container img{
+    width:25px;
+    margin-right: 20px;
+  }
+  .facility-container{
+    padding-top: 120px;
+  }
+  .facility-header{
+    line-height: 110%;
+  }
+  .facility-sub-header div{
+    width: 98vw;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+
+
+  .item-image-container img{
+    width:33%;
+  }
+
+
+
+  .item-text-container div{
+    padding:14px;
+    padding-bottom: 24px;
+  }
+
+  .item-text-description{
+    margin-top: -30px;
+  }
+
+  .item-items-header{
+    margin-top: -10px;
+    margin-bottom: -30px;
+  }
+  
+  .item-items-item{
+    margin-bottom: -30px;
+  }
+
+  .facility-video-container{
+    margin-top: -50px;
+  }
+
+  .facility-video-container iframe{
+    width: 95vw;
+    height: 54vw;
+  }
+
+  .between{
+    margin-top: 40px;
+    margin-bottom: -20px;
+    font-size: 40px;
+  }
+  #map-canvas{
+    height:100vw;
+    width:100vw;
+  }
+  .contact-container div div{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

@@ -11,47 +11,45 @@ const Facility=props=>{
             </div>
             <div className='facility-sub-header'>
                 <div>
-                Rely on experts to eliminate HR, Payroll, & Benefits challenges so you can focus on your business
+                HMD Healthcare strives to set a benchmark when it comes to manufacturing medical consumables and is helping save human lives across the globe since 1957.
                 </div>
             </div>
             <div className='facility-video-container'>
-                <iframe src="https://www.youtube.com/embed/61Lu03Q9tls?si=E2yTRabUt7cNNT5u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/61Lu03Q9tls?si=E2yTRabUt7cNNT5u?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow='autoplay' allowfullscreen></iframe>
             </div>
             <div className='facility-header between'>
-                Advisory & Outsourced Services
+                Our Motto
             </div>
             <div className='item-body'>
                 <Grid container style={{width:'100%'}}>
                     <Grid item xs={12}>
                         <Grid container>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6}  order={{ xs: 2,md:1}}>
                                 <div className='item-text-container'>
-                                    <div style={{marginLeft:'40px'}}>
+                                    <div>
                                         <div className='item-text-header'>
-                                            Advisory
+                                            IV Cannula (IV Catheter)
                                         </div>
                                         <div className='item-text-description'>
-                                            Our Advisory Services keep things simple by giving you unlimited access to our team of HR and payroll experts which advise you through your toughest situations.
+                                        An IV is a small plastic tube, inserted into a vein, usually in your hand or arm. An IV is a small plastic tube, inserted into a vein, usually in your hand or arm. An IV is used to: provide fluids when you are dehydrated or can't drink.
                                         </div>
                                         <div className='item-items-header'>
-                                            What's included?
+                                            Features
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations
+                                            <img src={okIcon}/> Intravenous catheter with integrated injection port and vanve for peripheral catheterisation.
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
+                                            <img src={okIcon}/> Permits needle-free adminstration of bolus medications during infusion.
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
+                                            <img src={okIcon}/> Back-cut needle bevel and tapered end of the PTFE catheter allows insertion and minimises the risk of vein damage.
                                         </div>
-                                        <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
-                                        </div>
+                                      
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6}  order={{ xs: 1,md:2}}>
                                 <div className='item-image-container'>
                                     <img src={Illustration}/>
                                 </div>
@@ -60,34 +58,31 @@ const Facility=props=>{
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container style={{marginTop:'40px'}}>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6}order={{ xs: 1,md:1}}>
                                 <div className='item-image-container'>
                                     <img src={Illustration}/>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6} order={{ xs: 2,md:2}}>
                                 <div className='item-text-container'>
-                                    <div style={{marginLeft:'40px'}}>
+                                    <div>
                                         <div className='item-text-header'>
-                                            Advisory
+                                            Alcohol Pad
                                         </div>
                                         <div className='item-text-description'>
-                                            Our Advisory Services keep things simple by giving you unlimited access to our team of HR and payroll experts which advise you through your toughest situations.
+                                            Alcohol prep pads protect the body from potentially harmful germs when an injection is administered, or the skin will be cut somehow
                                         </div>
                                         <div className='item-items-header'>
-                                            What's included?
+                                            Features
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations
+                                            <img src={okIcon}/> Alcohol swabs contain 70% isopropyl alcohol for optimum antibacterial action.
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
+                                            <img src={okIcon}/> Individually wrapped in layers, our alcohol swabs provide an airtight seal that prevents leakage and drying.
                                         </div>
                                         <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
-                                        </div>
-                                        <div className='item-items-item'>
-                                            <img src={okIcon}/> Dealing with difficult employee situations abcdefssss
+                                            <img src={okIcon}/> Both home and hospital use.
                                         </div>
                                     </div>
                                 </div>

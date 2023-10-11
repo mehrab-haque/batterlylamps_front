@@ -1,8 +1,22 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.jpg'
 import { Link } from 'react-router-dom'
+import burger from '../assets/menu.png'
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const Header=props=>{
+
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
     return(
         <div className='header-container'>
             <div className='header-logo-container'>
@@ -30,6 +44,25 @@ const Header=props=>{
                     <Link to='/contact'>CONTACT US</Link>
                 </button>
             </div>
+            <div className='header-burger-container'>
+                <img src={burger} onClick={handleClick}/>
+            </div>
+            <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                'aria-labelledby': 'basic-button',
+                }}
+            >
+                <MenuItem onClick={handleClose}><Link to='/'>HOME</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/products'>PRODUCTS</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/company'>COMPANY</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/facility'>FACILITY</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/contact'>CONTACT US</Link></MenuItem>
+            </Menu>
+
         </div>
     )
 }
